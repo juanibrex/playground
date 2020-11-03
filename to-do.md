@@ -11,4 +11,4 @@
 + □ aspect ratio
 + □ a11y
 + □ Filter -> drop-shadows
-+ □ 
++ □ (atajos de teclado)
