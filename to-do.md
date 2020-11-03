@@ -8,7 +8,7 @@
 + □ snap scroll
 + □ horizontal scroll
 + □ adaptative components !
-+ □ aspect ratio
++ ✓ aspect ratio
 + □ a11y
 + □ Filter -> drop-shadows
-+ □ (atajos de teclado)
++ ✓ (atajos de teclado)
