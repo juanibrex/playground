@@ -11,9 +11,18 @@ Repositorio con ejercicios de frontend utilizando recursos en local para trabaja
 ## Workflow
 Actualizar y versionar cada ejercicio en el repositorio local y en Github en el día a día.
 
-+ `git add .`
-+ `git commit -m "-Nombre de carpeta- agregado"`
-+ `git push`
+##### Crear nuevo ejercicio
+1. Ubicarme en la carpeta playground
+2. `mkdir nombre-ejercicio`
+3. `cd nombre-ejercicio`
+4. `touch index.html style.scss README.md`
+
+##### Control de versiones
+1. Ubicarme en la carpeta Playground con `cd ..`
+2. `git status`
+3. `git add .`
+4. `git commit -m "-Nombre de carpeta- agregado"`
+5. `git push`
 
 
 ### TODO

@@ -1,0 +1,45 @@
+body{
+  background-color: #fff;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.drop-shadow,
+.box-shadow{
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fafafa;
+}
+figure{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+figcaption{
+  padding: 1rem;
+  text-align: center;
+  font-style: italic;
+  font-size: .75rem;
+  background-color: silver;
+}
+
+.drop-shadow{
+
+  .image{
+    max-width: 100%;
+    height: 300px;
+    vertical-align: middle;
+    filter: drop-shadow(12px 14px 2px lime);
+    // outline: 1px solid #000;
+  }
+}
+
+.box-shadow{
+
+  .image{
+    max-width: 100%;
+    height: 300px;
+    vertical-align: middle;
+    box-shadow: 12px 14px 2px 0 lime;
+  }
+}
