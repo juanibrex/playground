@@ -1,14 +1,16 @@
 # TO-DO
 
-+ ✓ Centrar elementos con place-item
-+ ✓ Optimizar clases con SASS
++ ✓ 25/10/20 - Centrar elementos con place-item
++ ✓ 26/10/20 - Optimizar clases con SASS
 + □ Layouts -> 1linelayouts.glitch.me
-+ □ img Lazy loading
-+ □ img responsive <source> avif
++ □ html - img Lazy loading
++ □ html - img responsive <source> avif
 + □ snap scroll
 + □ horizontal scroll
 + □ adaptative components !
-+ ✓ aspect ratio
++ ✓ 03/11/20 - aspect ratio
 + □ a11y
-+ □ Filter -> drop-shadows
-+ ✓ (atajos de teclado)
++ ✓ 04/11/20 - Filter -> Drop-shadows
++ ✓ 27/10/20 - (atajos de teclado) 
++ ✓ 05/11/20 - Pseudo classes child
++ □  
