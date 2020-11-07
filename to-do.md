@@ -13,4 +13,5 @@
 + ✓ 04/11/20 - Filter -> Drop-shadows
 + ✓ 27/10/20 - (atajos de teclado) 
 + ✓ 05/11/20 - Pseudo classes child
-+ □  
++ □ Blur nav like aple
++  
