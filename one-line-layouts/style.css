@@ -1,0 +1,108 @@
+:root {
+  --parent-color: steelblue;
+  --child-color: coral;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-variant: small-caps;
+}
+
+.parent {
+  max-width: 800px;
+  height: 300px;
+  background-color: steelblue;
+  resize: both;
+  position: relative;
+  overflow: hidden;
+}
+
+.child {
+  background-color: coral;
+}
+
+.ex1 {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.ex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ex2 .child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+  margin: 5px;
+}
+
+.ex3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(150px, 25%) 1fr;
+      grid-template-columns: minmax(150px, 25%) 1fr;
+}
+
+.ex3 .sidebar {
+  background-color: transparent;
+}
+
+.ex4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+}
+
+.ex4 > * {
+  padding: 1rem;
+}
+
+.ex4 .main {
+  background-color: transparent;
+}
+
+.ex5 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+}
+
+.ex5 .header,
+.ex5 .footer {
+  padding: 1rem;
+  background-color: #ff0;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+}
+
+.ex5 .left-sidebar {
+  background-color: transparent;
+}
+
+.ex5 .main {
+  background-color: lightgreen;
+}
+/*# sourceMappingURL=style.css.map */

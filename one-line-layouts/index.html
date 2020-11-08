@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Line Layouts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>1 Lines Layouts</h1>
+  <section class="container">
+    <h2 class="title">01. Super Center</h2>
+    <p>La caja interna siempre va a estar en el centro, aún cuando le agrego contenido o modifico los valores de width o
+      height de su padre.</p>
+    <div class="parent ex1">
+      <div class="child" contenteditable>:) </div>
+    </div>
+  </section>
+  <section class="container">
+    <h2 class="title">02. The Deconstructed Pancake</h2>
+    <p>los elementos internos se van a achicar hasta el valor del baseWidth o flex-basis cuando esto suceda se van a
+      apilar en el
+      espacio sobrante uno sobre otro.</p>
+    <div class="parent ex2">
+      <div class="child" contenteditable>1</div>
+      <div class="child" contenteditable>2</div>
+      <div class="child" contenteditable>3</div>
+    </div>
+  </section>
+  <section class="container">
+    <h2 class="title">03. Sidebar Says</h2>
+    <p>El sideba se va a achicar hasta 150px y va a acrecer un 25% de su padre como máximo. El contenido toma todo el
+      espacio restante.</p>
+    <div class="parent ex3">
+      <div class="child sidebar" contenteditable>Sidebar</div>
+      <div class="child main" contenteditable>main content</div>
+    </div>
+  </section>
+  <section class="container">
+    <h2 class="title">04. Pancake Stack</h2>
+    <p>Apilamos los elementos y dejamos que el main content crezca todo el espacio que pueda. La altura del header y el
+      footer va a estar supeditado a su contenido.</p>
+    <div class="parent ex4">
+      <div class="child header" contenteditable>header</div>
+      <div class="child main" contenteditable>main</div>
+      <div class="child footer" contenteditable>Footer</div>
+    </div>
+  </section>
+  <section class="container">
+    <h2 class="title">05. Cassic Holy Grail Layout</h2>
+    <p>.</p>
+    <div class="parent ex5">
+      <div class="child header" contenteditable>header</div>
+      <div class="child left-sidebar" contenteditable>left Sidebar</div>
+      <div class="child main" contenteditable>main Content</div>
+      <div class="child right-sidebar" contenteditable>Right Sidebar</div>
+      <div class="child footer" contenteditable>Footer</div>
+    </div>
+  </section>
+</body>
+
+</html>

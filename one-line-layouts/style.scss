@@ -1,0 +1,89 @@
+:root{
+  --parent-color: steelblue;
+  --child-color: coral;
+}
+
+*{box-sizing: border-box;}
+
+body{
+  font-family: sans-serif;
+}
+
+.container{
+  margin-bottom: 3rem;
+}
+h2{
+  font-variant: small-caps;
+}
+
+.parent{
+  max-width: 800px;
+  height: 300px;
+  background-color: steelblue;
+// Risize
+  resize: both;
+  position: relative;
+  overflow: hidden;
+}
+.child{
+  background-color: coral;
+}
+
+// 1 Line Layout Exercise
+
+.ex1{
+  display: grid;
+  place-items: center;
+}
+
+.ex2{
+  display: flex;
+  flex-wrap: wrap;
+
+  .child{
+  //  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+  //  If we don't want the items to stretch:
+    flex: 1 1 200px;
+    //  If we do want the items to stretch:
+    // flex: 0 1 200px;
+    margin: 5px;
+  }
+}
+
+.ex3{
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+
+  .sidebar{
+    background-color: transparent;
+  }
+}
+
+.ex4{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  > *{
+    padding: 1rem;
+  }
+  .main{
+    background-color: transparent;
+  }
+}
+
+.ex5{
+  display: grid;
+  // grid-template: auto 1fr auto / auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  .header,
+  .footer{
+    padding: 1rem; background-color: #ff0;
+    grid-column: 1 / 4; //span 3
+  }
+  .left-sidebar{
+    background-color: transparent;
+  }
+  .main{
+    background-color: lightgreen;
+  }
+}
