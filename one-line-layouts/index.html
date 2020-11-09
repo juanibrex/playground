@@ -31,7 +31,7 @@
   </section>
   <section class="container">
     <h2 class="title">03. Sidebar Says</h2>
-    <p>El sideba se va a achicar hasta 150px y va a acrecer un 25% de su padre como máximo. El contenido toma todo el
+    <p>El sidebar se va a achicar hasta 150px y va a acrecer un 25% de su padre como máximo. El contenido toma todo el
       espacio restante.</p>
     <div class="parent ex3">
       <div class="child sidebar" contenteditable>Sidebar</div>
@@ -50,13 +50,52 @@
   </section>
   <section class="container">
     <h2 class="title">05. Cassic Holy Grail Layout</h2>
-    <p>.</p>
+    <p>Estructura clasica de layout. Con solo Grid-Template en el padre y Grid-column en los hijos.</p>
     <div class="parent ex5">
       <div class="child header" contenteditable>header</div>
       <div class="child left-sidebar" contenteditable>left Sidebar</div>
       <div class="child main" contenteditable>main Content</div>
       <div class="child right-sidebar" contenteditable>Right Sidebar</div>
       <div class="child footer" contenteditable>Footer</div>
+    </div>
+  </section>
+  <section class="container">
+    <h2 class="title">06. 12-Span Grid</h2>
+    <p>Con repeat() podemos crear un sistema de grillas muy rapido. Cada columna o fila se repite el numero de veces N
+      con el valor de su medida.</p>
+    <div class="parent ex6">
+      <div class="child span-12" contenteditable>Span-12</div>
+      <div class="child span-6" contenteditable>Span-6</div>
+      <div class="child span-4" contenteditable>Span-4</div>
+      <div class="child span-2" contenteditable>Span-2</div>
+    </div>
+  </section>
+  <section class="container">
+    <h2 class="title">07. RAM (Repeat, Auto, Minmax)</h2>
+    <p>
+      grid-template-columns: repeat(auto-fit, minmax(
+      <base>, 1fr)). <br>
+      Cada elemento crece hasta 1 fr y se encoje hasta en valor base. La cantidad de columnas esta delimitado por la
+      cantidad de elementos hijos.
+    </p>
+    <div class="parent ex7">
+      <div class="child" contenteditable>1</div>
+      <div class="child" contenteditable>2</div>
+      <div class="child" contenteditable>3</div>
+      <div class="child" contenteditable>4</div>
+    </div>
+  </section>
+  <section class="container">
+    <h2 class="title">08. Line Up</h2>
+    <p>
+      justify-content: space-between<br>
+      .
+    </p>
+    <div class="parent ex8">
+      <div class="child" contenteditable>1</div>
+      <div class="child" contenteditable>2</div>
+      <div class="child" contenteditable>3</div>
+      <div class="child" contenteditable>4</div>
     </div>
   </section>
 </body>

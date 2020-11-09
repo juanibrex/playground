@@ -19,7 +19,9 @@ Una Kravets
 3. Sidebar says
 4. Pancake stack
 5. Classic holy grail layout https://youtu.be/qm0IfG1GyZU?t=469
-6. 
+6. 12-Span Grid
+7. RAM (Repeat, Auto, Minmax) https://youtu.be/qm0IfG1GyZU?t=836
+8. 
 
 
 ## Recursos

@@ -7,7 +7,7 @@
 + ✓ 04/11/20 - Filter -> Drop-shadows
 + ✓ 05/11/20 - Pseudo classes child
 + ✓ 07/11/20 - html - img Lazy loading
-+ □ Layouts -> 1linelayouts.glitch.me
++ □ 08/11/20 - 1 line layouts -> 1linelayouts.glitch.me
   1. 
   2. 
   3. 
