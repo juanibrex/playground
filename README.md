@@ -2,6 +2,9 @@
 
 Repositorio con ejercicios de frontend utilizando recursos en local para trabajar rápido y offline.
 
+## Repositorio Online en GitHub
+https://github.com/juanibrex/playground
+
 ## Recursos
 + Visual Studio Code
   + Live server
