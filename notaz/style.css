@@ -1,0 +1,36 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  font-family: sans-serif;
+}
+
+.notes {
+  background-color: #fafafa;
+  min-height: calc(100vh - 32px);
+  margin: 0;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.notes div {
+  margin-bottom: 1rem;
+}
+
+.notes div:first-child {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.notes div::first-letter {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */
