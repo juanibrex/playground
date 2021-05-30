@@ -1,0 +1,28 @@
+:root{
+  --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+  --fontBase: 'Poppins', sans-serif;
+  --headline1: 700 95px/153.71px var(--fontBase);
+  --headline2: 700 59px/95px var(--fontBase);
+  --headline3: 700 48px/77px var(--fontBase);
+  --headline4: 700 34px/55px var(--fontBase);
+  --headline5: 700 24px/38px var(--fontBase);
+  --body1: 16px/25px var(--fontBase);
+  --body2: 14px/22px var(--fontBase);
+  --button: bold 14px/22px var(--fontBase);
+  --caption: 12px/19px var(--fontBase);
+  --purple: #310A90;
+  --green: #42E2B8;
+}
+
+body{
+  background-image: var(--gradient);
+  min-block-size: 100vh;
+  font: var(--body1);
+  color: var(--green);
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
