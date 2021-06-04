@@ -1,0 +1,30 @@
+.scale{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: tomato;
+
+  &:hover{
+    transform: scale(1.5);
+  }
+}
+
+.skew{
+  width: 100px;height: 100px;
+  border-radius: 10px;
+  background-color: steelblue;
+
+  &:hover{
+    transform: skew(20deg);
+  }
+}
+
+.rotate{
+  width: 150px;height: 100px;
+  border-radius: 10px;
+  background-color: coral;
+
+  &:hover{
+    transform: rotate(1000deg);
+  }
+}

@@ -1,0 +1,24 @@
+.shadow {
+  background-color: grey;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.circle {
+  background: #dd3e54;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6be585), to(#dd3e54));
+  background: linear-gradient(to right, #6be585, #dd3e54);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.circle:hover {
+  -webkit-transform: translate(20px, -20px);
+          transform: translate(20px, -20px);
+}
+/*# sourceMappingURL=style.css.map */

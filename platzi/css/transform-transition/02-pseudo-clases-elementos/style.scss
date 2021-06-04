@@ -1,0 +1,26 @@
+a:link{
+  color: tomato;
+  background-color: greenyellow;
+}
+a:hover{
+  color: aqua;
+  background-color: steelblue;
+}
+
+p:not(.maravillas){
+  color: goldenrod;
+}
+
+.contenedor div:nth-child(2){
+  background-color: blue;
+  color: whitesmoke;
+}
+
+
+// Pseudo Elements
+.pseudo-element::before{
+  content: ':( ';
+}
+.pseudo-element::after{
+  content: ' ;)';
+}

@@ -1,0 +1,36 @@
+.scale {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: tomato;
+}
+
+.scale:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.skew {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: steelblue;
+}
+
+.skew:hover {
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.rotate {
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: coral;
+}
+
+.rotate:hover {
+  -webkit-transform: rotate(1000deg);
+          transform: rotate(1000deg);
+}
+/*# sourceMappingURL=style.css.map */
