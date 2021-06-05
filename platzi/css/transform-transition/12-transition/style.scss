@@ -1,0 +1,83 @@
+body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container{
+  background-color: teal;
+  width: 500px;
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:hover div{
+    transform: scale(1.2);
+    border-radius: 4px;
+  }
+}
+
+[class^=box]{
+  background-color: tomato;
+  width: 100px;
+  height: 100px;
+}
+
+.box-1{
+  transition: transform 500ms;
+}
+.box-2{
+  transition: transform 1s;
+}
+.box-3{
+  transition: transform 1.5s;
+}
+
+// Transition timing function & Delay
+
+.container-circle{
+  border: 1px solid black;
+
+  &:hover div{
+    transform: translateX(200px);
+  }
+}
+
+[class^=circle-]{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.circle-1{
+  background-color: tomato;
+  transition: transform 1s linear;
+  transition-delay: .25s;
+}
+.circle-2{
+  background-color: orange;
+  transition: transform 1.2s ease;
+  transition-delay: .5s;
+}
+.circle-3{
+  background-color: burlywood;
+  transition: transform 1.4s ease-in;
+  transition-delay: .75s;
+}
+.circle-4{
+  background-color: aquamarine;
+  transition: transform 1.6s ease-in-out;
+  transition-delay: 1s;
+}
+.circle-5{
+  background-color: coral;
+  transition: transform 1.8s ease-out;
+  transition-delay: 1.25s;
+}
+.circle-6{
+  background-color: rebeccapurple;
+  // https://cubic-bezier.com/
+  transition: transform 2s cubic-bezier(.17,.67,.83,.67);
+  transition-delay: 1.5s;
+}

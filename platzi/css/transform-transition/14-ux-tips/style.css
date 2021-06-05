@@ -1,0 +1,57 @@
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #0ff;
+  -webkit-transition: -webkit-transform 1.5s ease-out;
+  transition: -webkit-transform 1.5s ease-out;
+  transition: transform 1.5s ease-out;
+  transition: transform 1.5s ease-out, -webkit-transform 1.5s ease-out;
+}
+
+.ball:hover {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav li ul {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  -webkit-transition: visibility 400ms;
+  transition: visibility 400ms;
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+}
+
+.nav li:hover > ul {
+  visibility: visible;
+  -webkit-transition: visibility 400ms;
+  transition: visibility 400ms;
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+}
+
+.nav li ul li {
+  position: relative;
+  right: -80px;
+}
+/*# sourceMappingURL=style.css.map */

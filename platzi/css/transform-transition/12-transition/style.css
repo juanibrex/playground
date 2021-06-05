@@ -1,0 +1,136 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  background-color: teal;
+  width: 500px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container:hover div {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border-radius: 4px;
+}
+
+[class^=box] {
+  background-color: tomato;
+  width: 100px;
+  height: 100px;
+}
+
+.box-1 {
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+.box-2 {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.box-3 {
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+}
+
+.container-circle {
+  border: 1px solid black;
+}
+
+.container-circle:hover div {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+[class^=circle-] {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.circle-1 {
+  background-color: tomato;
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+.circle-2 {
+  background-color: orange;
+  -webkit-transition: -webkit-transform 1.2s ease;
+  transition: -webkit-transform 1.2s ease;
+  transition: transform 1.2s ease;
+  transition: transform 1.2s ease, -webkit-transform 1.2s ease;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+.circle-3 {
+  background-color: burlywood;
+  -webkit-transition: -webkit-transform 1.4s ease-in;
+  transition: -webkit-transform 1.4s ease-in;
+  transition: transform 1.4s ease-in;
+  transition: transform 1.4s ease-in, -webkit-transform 1.4s ease-in;
+  -webkit-transition-delay: .75s;
+          transition-delay: .75s;
+}
+
+.circle-4 {
+  background-color: aquamarine;
+  -webkit-transition: -webkit-transform 1.6s ease-in-out;
+  transition: -webkit-transform 1.6s ease-in-out;
+  transition: transform 1.6s ease-in-out;
+  transition: transform 1.6s ease-in-out, -webkit-transform 1.6s ease-in-out;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.circle-5 {
+  background-color: coral;
+  -webkit-transition: -webkit-transform 1.8s ease-out;
+  transition: -webkit-transform 1.8s ease-out;
+  transition: transform 1.8s ease-out;
+  transition: transform 1.8s ease-out, -webkit-transform 1.8s ease-out;
+  -webkit-transition-delay: 1.25s;
+          transition-delay: 1.25s;
+}
+
+.circle-6 {
+  background-color: rebeccapurple;
+  -webkit-transition: -webkit-transform 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: -webkit-transform 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: transform 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: transform 2s cubic-bezier(0.17, 0.67, 0.83, 0.67), -webkit-transform 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+}
+/*# sourceMappingURL=style.css.map */

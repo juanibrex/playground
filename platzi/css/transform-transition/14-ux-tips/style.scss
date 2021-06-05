@@ -1,0 +1,47 @@
+.ball{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #0ff;
+  transition: transform 1.5s ease-out;
+
+  &:hover{
+    transform: translateX(200px);
+    transition: transform 1s linear;
+  }
+}
+
+// Clase 15 - Tiempos de espera
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+.nav{
+  display: flex;
+}
+
+.nav li ul{
+  display: block;
+  // opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  // transition: opacity 400ms;
+  transition: visibility 400ms;
+  transition-delay: 300ms;
+}
+
+.nav li:hover > ul{
+  // opacity: 1;
+  visibility: visible;
+  transition: visibility 400ms;
+  // transition: opacity 400ms;
+  transition-delay: 300ms;
+}
+
+.nav li ul li{
+  position: relative;
+  right: -80px;
+}
