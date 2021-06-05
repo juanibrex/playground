@@ -1,0 +1,48 @@
+//https://static.platzi.com/media/public/uploads/transform-style_afd0d8d3-20a3-49c3-bfaa-3de5dfd00221.html
+
+.container{
+  width: 100px;height: 100px;
+  border: 5px solid #000;
+  perspective: 100px;
+  position: relative;
+}
+
+.item{
+  width: 100px;height: 100px;
+  border: 3px solid green;
+  background-color: rgba(green, .3);
+  transform-style: preserve-3d;
+  transform: rotateX(40deg);
+  position: absolute;
+}
+
+// Backface visibility
+// https://static.platzi.com/media/public/uploads/backface-visibility_194ecbfb-86c2-43b3-a7e4-ee697e3f34d3.html
+
+.card{
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.face{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  backface-visibility: hidden;
+
+  &:hover{
+    transform: rotateY(180deg);
+  }
+
+  &.front{
+    background-color: red;
+  }
+
+  &.back{
+    background-color: blue;
+    transform: rotateY(180deg);
+  }
+}

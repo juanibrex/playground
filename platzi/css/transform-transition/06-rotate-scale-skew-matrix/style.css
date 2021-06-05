@@ -26,7 +26,9 @@
   width: 150px;
   height: 100px;
   border-radius: 10px;
-  background-color: coral;
+  background-color: yellow;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
 }
 
 .rotate:hover {
