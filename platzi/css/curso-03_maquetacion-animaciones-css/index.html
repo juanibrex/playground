@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lego</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;100;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page">
+    <!-- MAIN CONTAINER -->
+    <section class="container">
+      <nav class="navbar">
+        <div class="navbar-content">
+          <img src="https://i.ibb.co/MMmDPXN/lego.png" alt="logo">
+          <ul>
+            <li><a href="/">Exclusivos</a></li>
+            <li><a href="/">Nuevos</a></li>
+            <li><a href="/">Gift cards</a></li>
+            <li><a href="/">Find a store</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="main-content">
+        <h2>Diseña tu</h2>
+        <h1>Súper Héroe!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro perferendis eligendi iure ea quidem! Velit
+          voluptate repellendus corporis odit sapiente qui magni assumenda! Minima aperiam enim est impedit consequatur!
+          Ut?</p>
+      </section>
+      <section class="side-content">
+        <div></div>
+        <h2>Superman</h2>
+        <img src="https://i.ibb.co/x16pz1x/super-man.png" alt="Superman Lego">
+      </section>
+      <section class="footer">
+        <div class="heroes-base" id="button1">
+          <img src="https://i.ibb.co/tKWqw8J/spiderman.png" alt="Spiderman">
+        </div>
+        <div class="heroes-base">
+          <img src="https://i.ibb.co/Xzsdvgg/robin.png" alt="Robin">
+        </div>
+        <div class="heroes-base">
+          <img src="https://i.ibb.co/M18p91c/batman.webp" alt="Batman">
+        </div>
+      </section>
+      <!-- Enlace a las practicas de clases -->
+      <section class="clases-hidden">
+        <a href="https://static.platzi.com/media/public/uploads/clase2_1d5e64b8-377f-423c-ab6e-3263a696c960.html"
+          title="Clase 02 - Estructura del proyecto" target="_blank">02</a>
+
+        <a href="https://static.platzi.com/media/public/uploads/clase3_ef26fd67-e617-4c86-983f-2065e4b648f2.html"
+          title="Clase 03 - Maquetación del loader" target="_blank">03</a>
+
+        <a href="https://static.platzi.com/media/public/uploads/clase4_7976a83a-f212-4882-b32a-b70904b810e6.html"
+          title="Clase 04 - Layout con CSS Grid" target="_blank">04</a>
+
+        <a href="https://static.platzi.com/media/public/uploads/clase5_106a02be-e291-4691-b8a6-7f21e8dba21b.html"
+          title="Clase 05 - Navbar animado" target="_blank">05</a>
+        <a href="https://static.platzi.com/media/public/uploads/clase6_e3e83965-d52c-4ed3-9179-084385e262e6.html"
+          title="Clase 08 - footer" target="_blank">08</a>
+        <a href="https://static.platzi.com/media/public/uploads/clase6_c0c5c67f-050c-48cd-9dbf-5d2bb57298f1.html"
+          title="Clase 09 - Como acceder al DOM con JS" target="_blank">09</a>
+        <a href="https://static.platzi.com/media/public/uploads/clase7_ea70af09-7f7f-4302-9675-0ac356ce66e2.html"
+          title="Clase 10 - Modal: evento click con JavaScript10" target="_blank">10</a>
+        <a href="https://static.platzi.com/media/public/uploads/clase8_3b41643f-9f7a-44b5-99b8-8c04fc21dad5.html"
+          title="Clase 11 - slider" target="_blank">11</a>
+        <a href="https://static.platzi.com/media/public/uploads/lego_77aa16e3-2e82-4aee-946c-57687d8751ba.html"
+          title="Clase 12 - Fin :(" target="_blank">12</a>
+      </section>
+    </section>
+    <!-- LOADER -->
+    <section class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+    <!-- MODAL -->
+    <section class="modal hidden">
+      <div class="modal-content">
+        <img src="https://img.icons8.com/windows/32/000000/macos-close.png" alt="close" class="modal-content--close">
+        <div class="modal-content--slider">
+          <input type="radio" name="slider-1" id="radio-1" checked>
+          <input type="radio" name="slider-1" id="radio-2">
+          <input type="radio" name="slider-1" id="radio-3">
+          <div class="cards">
+            <label for="radio-1" class="card" id="card-1">
+              <!-- <img src="https://static.platzi.com/media/public/uploads/spider-man_db8af43d-b692-4986-a385-e645d286e142.png" alt=""> -->
+            </label>
+            <label for="radio-2" class="card" id="card-2">
+              <!-- <img src="https://static.platzi.com/media/public/uploads/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png" alt=""> -->
+            </label>
+            <label for="radio-3" class="card" id="card-3">
+              <!-- <img src="https://static.platzi.com/media/public/uploads/spider-man-3_19f5c510-8059-4477-abf8-42249a5445b7.png" alt=""> -->
+            </label>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</body>
+
+<script>
+  const modal = document.querySelector('.modal')
+  const button1 = document.querySelector('#button1')
+  const closeButton = document.querySelector('.modal-content--close')
+
+  button1.addEventListener('click', () => {
+    modal.classList.remove('hidden')
+    modal.classList.add('visible')
+  })
+
+  closeButton.addEventListener('click', () => {
+    console.log('hola boton cerrar')
+    modal.classList.add('hidden')
+    modal.classList.remove('visible')
+  })
+</script>
+
+</html>
