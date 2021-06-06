@@ -30,7 +30,29 @@ body{
   height: 450px;
   width: 80px;
   background: #ff0;
+
+  animation-name: layer;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
+  & input[type=checkbox]{
+    background-color: #f00;
+  }
 }
+@keyframes layer {
+  0%{
+    bottom: 0;
+  }
+  25%{
+    bottom: -80px;
+  }
+  100%{
+    bottom: 0;
+  }
+}
+
+
 // Conejito
 .layer-2{
   z-index: 2;
@@ -49,15 +71,88 @@ body{
   margin: 0 auto;
   height: 400px;
   width: 220px;
-  background-color: pink;
+  background-image: linear-gradient(
+    green 10%,
+    greenyellow 10%,
+    greenyellow 13%,
+    brown 13%
+  );
 }
 
 // Clase 04 - Dibujando nuestros conejitos con css
-.left-ear--outer{
+[class*=-ear--]{
   position: absolute;
+  border-radius: 90%;
+}
+[class*=-ear--outer]{
   width: 20px;
   height: 50px;
   background-color: #fff;
-  border-radius: 90%;
+}
+[class*=-ear--inner]{
+  width: 20px;
+  height: 50px;
+  background-color: pink;
+}
+.left-ear--outer{
   left: 10px;
+}
+.right-ear--outer{
+  right: 10px;
+}
+
+[class*=-ear--inner]{
+  width: 10px;
+  height: 50px;
+  background-color: pink;
+}
+.left-ear--inner{
+  left: 15px;
+  top: 8px;
+}
+.right-ear--inner{
+  right: 15px;
+  top: 8px;
+}
+
+.head{
+  width: 100%;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+[class^=head-eye--]{
+  width: 4px;
+  height: 4px;
+  background-color: grey;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.head-eye--left{
+  left: 30px;
+}
+.head-eye--right{
+  right: 30px;
+}
+
+@keyframes blink {
+  10%{
+    transform: translate(0, 2px);
+    height: 1px;
+  }
+  15%{
+    transform: translate(0, 0);
+    height: 4px;
+  }
 }

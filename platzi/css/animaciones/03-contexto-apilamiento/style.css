@@ -30,6 +30,42 @@ body {
   height: 450px;
   width: 80px;
   background: #ff0;
+  -webkit-animation-name: layer;
+          animation-name: layer;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.layer-1 input[type=checkbox] {
+  background-color: #f00;
+}
+
+@-webkit-keyframes layer {
+  0% {
+    bottom: 0;
+  }
+  25% {
+    bottom: -80px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes layer {
+  0% {
+    bottom: 0;
+  }
+  25% {
+    bottom: -80px;
+  }
+  100% {
+    bottom: 0;
+  }
 }
 
 .layer-2 {
@@ -49,15 +85,109 @@ body {
   margin: 0 auto;
   height: 400px;
   width: 220px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, green), color-stop(10%, greenyellow), color-stop(13%, greenyellow), color-stop(13%, brown));
+  background-image: linear-gradient(green 10%, greenyellow 10%, greenyellow 13%, brown 13%);
+}
+
+[class*=-ear--] {
+  position: absolute;
+  border-radius: 90%;
+}
+
+[class*=-ear--outer] {
+  width: 20px;
+  height: 50px;
+  background-color: #fff;
+}
+
+[class*=-ear--inner] {
+  width: 20px;
+  height: 50px;
   background-color: pink;
 }
 
 .left-ear--outer {
-  position: absolute;
-  width: 20px;
-  height: 50px;
-  background-color: #fff;
-  border-radius: 90%;
   left: 10px;
+}
+
+.right-ear--outer {
+  right: 10px;
+}
+
+[class*=-ear--inner] {
+  width: 10px;
+  height: 50px;
+  background-color: pink;
+}
+
+.left-ear--inner {
+  left: 15px;
+  top: 8px;
+}
+
+.right-ear--inner {
+  right: 15px;
+  top: 8px;
+}
+
+.head {
+  width: 100%;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+[class^=head-eye--] {
+  width: 4px;
+  height: 4px;
+  background-color: grey;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.head-eye--left {
+  left: 30px;
+}
+
+.head-eye--right {
+  right: 30px;
+}
+
+@-webkit-keyframes blink {
+  10% {
+    -webkit-transform: translate(0, 2px);
+            transform: translate(0, 2px);
+    height: 1px;
+  }
+  15% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    height: 4px;
+  }
+}
+
+@keyframes blink {
+  10% {
+    -webkit-transform: translate(0, 2px);
+            transform: translate(0, 2px);
+    height: 1px;
+  }
+  15% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    height: 4px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
