@@ -1,0 +1,63 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.phone {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  background-color: #ccefff;
+  border: 8px solid #fff;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+[class^=layer-] {
+  position: absolute;
+}
+
+.layer-1 {
+  z-index: 1;
+  bottom: 0;
+  right: 60px;
+  height: 450px;
+  width: 80px;
+  background: #ff0;
+}
+
+.layer-2 {
+  z-index: 2;
+  bottom: 0;
+  left: 60px;
+  height: 450px;
+  width: 80px;
+  background: #ff0;
+}
+
+.layer-3 {
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 400px;
+  width: 220px;
+  background-color: pink;
+}
+
+.left-ear--outer {
+  position: absolute;
+  width: 20px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 90%;
+  left: 10px;
+}
+/*# sourceMappingURL=style.css.map */
