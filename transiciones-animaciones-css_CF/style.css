@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  -webkit-transition: -webkit-clip-path 3s;
+  transition: -webkit-clip-path 3s;
+  transition: clip-path 3s;
+  transition: clip-path 3s, -webkit-clip-path 3s;
+}
+
+.item:hover {
+  -webkit-clip-path: circle(30%);
+          clip-path: circle(30%);
+}
+/*# sourceMappingURL=style.css.map */

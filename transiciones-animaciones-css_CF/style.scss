@@ -1,0 +1,16 @@
+// Curso CSS Animaciones de CodigoFacilito.com
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.item{
+  width: 200px;
+  height: 200px;
+  background-color: #f0f;
+  clip-path: circle(50%);
+  transition: clip-path 3s;
+
+  &:hover{
+    clip-path: circle(30%);
+  }
+}
