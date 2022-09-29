@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piedra, Papel o Tijera</title>
+  <script>
+    let jugador = "";
+    let pc = Math.ceil(Math.random() * 3);
+
+    jugador = prompt("Elije 1 (Piedra), 2 (Papel) o 3 (Tijera)");
+    alert("Seleccionaste: " + jugador);
+    alert("Seleccion PC: " + pc);
+
+    if (jugador == pc) {
+      alert("Empataste")
+    } else if (jugador == 2 && pc == 3) {
+      alert("Perdiste")
+    } else {
+      alert("Empataste")
+    }
+
+  </script>
+</head>
+
+<body>
+  <h1>Piedra, papel o Tijera</h1>
+  <h3>Resumen del juego</h3>
+</body>
+
+</html>
