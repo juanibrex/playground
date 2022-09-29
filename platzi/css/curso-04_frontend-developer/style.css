@@ -1,0 +1,13 @@
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --very-light-pink: #C7C7C7;
+  --dark: #232830;
+  --hospital-green: #ACD9B2;
+  --text-input-field: #F7F7F7;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
